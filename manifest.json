@@ -1,16 +1,17 @@
 {
+  "id": "shopverse.app",
   "name": "ShopVerse",
   "short_name": "ShopVerse",
-  "id": "com.shopverse.pwa",
-  "start_url": "/index.html",
-  "scope": "/",
+  "description": "ShopVerse is your online shop for trending products, available anytime, anywhere.",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "orientation": "portrait",
   "dir": "auto",
   "lang": "en",
-  "description": "ShopVerse is your one-stop online shop for fashion, electronics, and home essentials with fast, secure checkout.",
+
   "icons": [
     {
       "src": "icon-192-any.png",
@@ -37,45 +38,26 @@
       "purpose": "maskable"
     }
   ],
-  "launch_handler": {
-    "client_mode": "focus-existing"
-  },
+
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope_extensions": [],
+  "iarc_rating_id": "e1234567890", 
+
   "screenshots": [
     {
-      "src": "screenshots/home.png",
+      "src": "screenshot1.png",
       "sizes": "1080x1920",
-      "type": "image/png",
-      "label": "Home Screen"
-    }
-  ],
-  "categories": ["shopping", "lifestyle", "ecommerce"],
-  "shortcuts": [
+      "type": "image/png"
+    },
     {
-      "name": "Shop Electronics",
-      "short_name": "Electronics",
-      "description": "Browse the latest electronics",
-      "url": "/electronics",
-      "icons": [
-        {
-          "src": "icons/electronics.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
+      "src": "screenshot2.png",
+      "sizes": "1080x1920",
+      "type": "image/png"
     }
   ],
-  "prefer_related_applications": false,
-  "related_applications": [
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.shopverse.pwa",
-      "id": "com.shopverse.pwa"
-    }
-  ],
-  "scope_extensions": [
-    {
-      "origin": "https://shopverse.com"
-    }
-  ],
-  "iarc_rating_id": "e1234567890" 
+
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
 }

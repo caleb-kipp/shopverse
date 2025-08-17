@@ -511,15 +511,13 @@ footer{margin-top:36px;border-top:1px solid rgba(255,255,255,.08);background:#0f
       </form>
     </div>
   </div>  
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/shopverse/service-worker.js', { scope: '/shopverse/' })
-      .then((reg) => {
-        console.log('SW registered with scope:', reg.scope);
-      })
-      .catch((err) => {
-        console.error('SW registration failed:', err);
-      });
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then((reg) => console.log("✅ SW registered:", reg.scope))
+        .catch((err) => console.error("❌ SW failed:", err));
+    });
   }
 </script>
   <script>
